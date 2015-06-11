@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
 # install GlobaLeaks on first run
-if [ test -e /tmp/install-globaleaks.sh ]; then
+if test -e /tmp/install-globaleaks.sh; then
     /tmp/install-globaleaks.sh \
         || ( echo "Error: start with option --privileged" && exit 1 )
     rm /tmp/install-globaleaks.sh
