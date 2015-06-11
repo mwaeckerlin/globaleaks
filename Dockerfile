@@ -9,6 +9,7 @@ RUN chmod +x /tmp/install-globaleaks.sh
 EXPOSE 8082
 EXPOSE 9040
 EXPOSE 9050
+VOLUME /etc
 VOLUME /var/globaleaks
 ADD start.sh /start.sh
 CMD /start.sh
